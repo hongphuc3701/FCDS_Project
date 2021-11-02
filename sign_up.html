@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+{% extends "base.html" %} {% block title %}Sign Up{% endblock %} {% block content %}
+<head>
+  <meta content="utf-8" http-equiv="encoding">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+body {
+	background: #ddafaf9d;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	font-family: 'Montserrat', sans-serif;
+	height: 100vh;
+	margin: -20px 0 50px;
+}
+h1 {
+	font-weight: bold;
+	margin: 0;
+}
+
+p {
+	font-size: 14px;
+	font-weight: 100;
+	line-height: 20px;
+	letter-spacing: 0.5px;
+	margin: 20px 0 30px;
+}
+form {
+	background-color: #a1c9d0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	padding: 0 50px;
+	height: 100%;
+	text-align: center;
+}
+.wrapper1{
+  margin:auto;
+  width: 500px;
+  height: fit-content;
+  background: #a1c9d0;
+  border-radius: 5px;
+  padding: 40px;
+  border: 20px solid #577f86;
+}
+button.btn{
+	border-radius: 20px;
+	background-color: #cc8084;
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 12px 45px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	transition: transform 80ms ease-in;
+}
+label{
+  margin-bottom: 0;
+  margin-top: 15px;
+  display: flex;
+  font-weight: 200;
+}
+
+</style>
+</head>
+<body>
+  <div class="wrapper1">
+    <form method="POST">
+    <h1>Sign Up</h1>
+      <label for="email">Email Address</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Enter email"/>
+      
+      <label for="firstName">First Name</label>
+        <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Aleast 3 words"/>
+      
+      <label for="password1">Password</label>
+        <input type="password" class="form-control" id="password1" name="password1"placeholder="Atleast 6 characters"/>
+  
+      <label for="password2">Password (Confirm)</label>
+        <input type="password" class="form-control" id="password2" name="password2" placeholder="Make sure they're matched"/>
+  
+      <br />
+      <button type="submit" class="btn">LET'S BEGIN</button>
+    </form>
+  </div>
+
+    {% endblock %}
+
+
+  </body>
+</html>
